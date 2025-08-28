@@ -10,7 +10,7 @@ locals {
   aws_eks_main_default = {
 
     name = "cbd-dev-cluster"
-    kubernetes_version = "1.27"
+    kubernetes_version = "1.31"
 
     addons = {
     coredns                = {}
@@ -38,7 +38,7 @@ locals {
         instance_types = ["m8g.medium"]
 
         min_size     = 2
-        max_size     = 10
+        max_size     = 3
         desired_size = 2
         }
     }
